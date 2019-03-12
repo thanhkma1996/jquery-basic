@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoc jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="main">
+			<div class="bai1">
+				<h2>This is a heading</h2>
+				<p>This is a paragraph.</p>
+				<p>This is another paragraph.</p>
+				<p class="test"> tắt nộ dung này </p>
+				<!-- Tifm hiêru về sự kiện hide/show trong jquery -->
+				<button>Click me to hide paragraphs</button>
+						<script>
+						$(document).ready(function(){
+						  $("button").click(function(){
+						    $("p").hide();
+						    $("p.test").hide();
+						    // $("p:first").hide()  sự kiện click ẩn đi thằng đầu tiên
+						     // $("*").hide();  sự kiện khi click ẩn tất cả nội dung
+										  });
+								});
+						</script>
+			</div>
+
+	</div>
+</body>
+</html>
